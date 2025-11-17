@@ -13,7 +13,7 @@ const Courses = () => {
     },
     {
       name: 'Administração',
-      image: 'https://img.freepik.com/free-photo/business-people-analyzing-statistics-financial-concept_53876-14835.jpg',
+      image: 'https://img.freepik.com/free-photo/business-people-meeting-discussing-ideas_53876-13391.jpg',
       icon: (
         <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 13.255A23.931 23.931 0 0112 15c-3.183 0-6.22-.62-9-1.745M16 6V4a2 2 0 00-2-2h-4a2 2 0 00-2 2v2m4 6h.01M5 20h14a2 2 0 002-2V8a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -22,7 +22,7 @@ const Courses = () => {
     },
     {
       name: 'Inglês',
-      image: 'https://img.freepik.com/free-photo/english-language-learning-online-education-concept_53876-123815.jpg',
+      image: 'https://img.freepik.com/free-photo/usa-flag-background-american-flag-with-blue-sky_1340-36757.jpg',
       icon: (
         <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5h12M9 3v2m1.048 9.5A18.022 18.022 0 016.412 9m6.088 9h7M11 21l5-10 5 10M12.751 5C11.783 10.77 8.07 15.61 3 18.129" />
@@ -41,7 +41,7 @@ const Courses = () => {
     },
     {
       name: 'Cuidador de Idosos',
-      image: 'https://img.freepik.com/free-photo/smiling-nurse-helping-elderly-woman_23-2148088549.jpg',
+      image: 'https://img.freepik.com/free-photo/nurse-helping-elderly-woman-with-medication_23-2148088550.jpg',
       icon: (
         <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
@@ -50,7 +50,7 @@ const Courses = () => {
     },
     {
       name: 'Liderança',
-      image: 'https://img.freepik.com/free-photo/business-people-meeting-discussing-ideas_53876-13391.jpg',
+      image: 'https://img.freepik.com/free-photo/business-leader-giving-presentation-team_23-2148898711.jpg',
       icon: (
         <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -59,7 +59,7 @@ const Courses = () => {
     },
     {
       name: 'Logística',
-      image: 'https://img.freepik.com/free-photo/logistics-transportation-container-cargo-ship-cargo-plane_335224-1396.jpg',
+      image: 'https://img.freepik.com/free-photo/warehouse-worker-with-tablet-checking-inventory_23-2149263652.jpg',
       icon: (
         <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path d="M9 17a2 2 0 11-4 0 2 2 0 014 0zM19 17a2 2 0 11-4 0 2 2 0 014 0z" />
@@ -78,7 +78,7 @@ const Courses = () => {
     },
     {
       name: 'Pacote Office',
-      image: 'https://img.freepik.com/free-photo/office-work-desk-with-laptop-coffee_23-2148892964.jpg',
+      image: 'https://img.freepik.com/free-photo/person-using-microsoft-office-laptop_23-2150038959.jpg',
       icon: (
         <svg className="w-8 h-8 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
