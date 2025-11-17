@@ -31,9 +31,9 @@ function App() {
       <SocialProof />
       <Courses />
       <Stats />
+      <HowToGet />
       <Benefits />
       <Comparison />
-      <HowToGet />
       <Testimonials />
       <Guarantee />
       <FAQ />
