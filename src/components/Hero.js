@@ -81,7 +81,7 @@ const Hero = () => {
                 </span>
               </div>
               <div className="text-[#f3115d] font-black text-2xl md:text-3xl mb-2">
-                R$ 156
+                R$ 117,99
               </div>
               <div className="text-[#0e0677] font-bold text-xl md:text-2xl">
                 em <span className="text-[#f3115d]">qualquer curso</span> da Microlins

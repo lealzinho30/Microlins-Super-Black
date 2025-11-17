@@ -54,7 +54,7 @@ const Comparison = () => {
               </div>
               <div className="flex items-baseline justify-center gap-2 mb-2">
                 <span className="text-2xl text-white/60 line-through">R$ 1.200</span>
-                <span className="text-5xl font-black text-white">R$ 156</span>
+                <span className="text-5xl font-black text-white">R$ 117,99</span>
               </div>
               <div className="text-[#f3115d] font-black text-lg">87% OFF</div>
             </div>
