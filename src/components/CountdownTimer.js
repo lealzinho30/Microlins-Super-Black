@@ -36,7 +36,7 @@ const CountdownTimer = () => {
   }, []);
 
   return (
-    <div className="flex gap-3 md:gap-6 justify-center items-center my-8">
+    <div className="flex gap-2 sm:gap-3 md:gap-4 lg:gap-6 justify-center items-center my-6 md:my-8 px-2">
       {[
         { value: timeLeft.days, label: 'DIAS' },
         { value: timeLeft.hours, label: 'HORAS' },
@@ -46,15 +46,15 @@ const CountdownTimer = () => {
         <React.Fragment key={item.label}>
           <div className="flex flex-col items-center group">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-to-br from-[#f3115d] to-[#ff1a6d] rounded-xl md:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
-              <div className="relative bg-gradient-to-br from-white to-gray-100 text-[#0e0677] font-black text-3xl md:text-5xl lg:text-6xl px-4 md:px-6 py-3 md:py-5 rounded-xl md:rounded-2xl shadow-2xl min-w-[70px] md:min-w-[100px] text-center border-2 border-white/50 transform group-hover:scale-105 transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#f3115d] to-[#ff1a6d] rounded-lg md:rounded-xl lg:rounded-2xl blur-lg opacity-50 group-hover:opacity-75 transition-opacity" />
+              <div className="relative bg-gradient-to-br from-white to-gray-100 text-[#0e0677] font-black text-xl sm:text-2xl md:text-4xl lg:text-5xl px-2 sm:px-3 md:px-5 py-2 sm:py-2.5 md:py-4 rounded-lg md:rounded-xl lg:rounded-2xl shadow-2xl min-w-[50px] sm:min-w-[60px] md:min-w-[90px] text-center border-2 border-white/50 transform group-hover:scale-105 transition-all duration-300">
                 {String(item.value).padStart(2, '0')}
               </div>
             </div>
-            <div className="text-white font-bold text-xs md:text-sm mt-3 uppercase tracking-wider">{item.label}</div>
+            <div className="text-white font-bold text-[10px] sm:text-xs md:text-sm mt-1.5 sm:mt-2 md:mt-3 uppercase tracking-wider">{item.label}</div>
           </div>
           {index < 3 && (
-            <div className="text-[#f3115d] font-black text-2xl md:text-4xl animate-pulse">:</div>
+            <div className="text-[#f3115d] font-black text-xl sm:text-2xl md:text-3xl lg:text-4xl animate-pulse">:</div>
           )}
         </React.Fragment>
       ))}
