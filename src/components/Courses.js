@@ -97,7 +97,7 @@ const Courses = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#0e0677] via-[#1a0f9e] to-[#0e0677] relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-gradient-to-br from-[#0e0677] via-[#1a0f9e] to-[#0e0677] relative overflow-hidden">
       {/* Background decoration animado */}
       <div className="absolute inset-0">
         <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#f3115d] rounded-full filter blur-[200px] opacity-20 animate-pulse" />
@@ -105,19 +105,19 @@ const Courses = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-6 py-2 bg-[#f3115d]/20 backdrop-blur-sm border border-[#f3115d]/50 rounded-full">
-            <span className="text-[#f3115d] font-bold text-sm uppercase tracking-wider">Escolha seu futuro</span>
+        <div className="text-center mb-10 md:mb-16">
+          <div className="inline-block mb-3 md:mb-4 px-4 sm:px-6 py-1.5 sm:py-2 bg-[#f3115d]/20 backdrop-blur-sm border border-[#f3115d]/50 rounded-full">
+            <span className="text-[#f3115d] font-bold text-xs sm:text-sm uppercase tracking-wider">Escolha seu futuro</span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6 leading-tight">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 md:mb-6 leading-tight px-4">
             Cursos com <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f3115d] via-[#ff1a6d] to-[#f3115d] animate-gradient">87% OFF</span>
           </h2>
-          <p className="text-xl md:text-2xl text-white/90 font-semibold max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 font-semibold max-w-3xl mx-auto px-4">
             Escolha o curso ideal para transformar sua carreira profissional
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+        <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-3 lg:grid-cols-5 gap-3 sm:gap-4 md:gap-6 mb-8 md:mb-12">
           {courses.map((course, index) => (
             <div
               key={index}
@@ -139,19 +139,21 @@ const Courses = () => {
               </div>
 
               {/* Conteúdo */}
-              <div className="absolute inset-0 flex flex-col items-center justify-end p-6">
+              <div className="absolute inset-0 flex flex-col items-center justify-end p-3 sm:p-4 md:p-6">
                 {/* Ícone */}
-                <div className="mb-4 p-4 bg-[#f3115d] rounded-2xl shadow-2xl group-hover:scale-110 transition-transform duration-300">
-                  {course.icon}
+                <div className="mb-2 sm:mb-3 md:mb-4 p-2 sm:p-3 md:p-4 bg-[#f3115d] rounded-xl md:rounded-2xl shadow-2xl group-hover:scale-110 transition-transform duration-300">
+                  <div className="w-5 h-5 sm:w-6 sm:h-6 md:w-8 md:h-8">
+                    {course.icon}
+                  </div>
                 </div>
                 
                 {/* Nome do curso */}
-                <h3 className="text-white font-black text-center text-base md:text-lg leading-tight mb-2">
+                <h3 className="text-white font-black text-center text-xs sm:text-sm md:text-base leading-tight mb-1.5 sm:mb-2 px-1">
                   {course.name}
                 </h3>
 
                 {/* Badge de desconto */}
-                <div className="bg-[#f3115d] text-white text-xs font-black px-3 py-1 rounded-full">
+                <div className="bg-[#f3115d] text-white text-[10px] sm:text-xs font-black px-2 sm:px-3 py-0.5 sm:py-1 rounded-full">
                   87% OFF
                 </div>
               </div>

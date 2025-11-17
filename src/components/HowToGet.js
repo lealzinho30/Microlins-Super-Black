@@ -35,7 +35,7 @@ const HowToGet = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-[#0e0677] via-[#1a0f9e] to-[#0e0677] relative overflow-hidden">
+    <section className="py-12 md:py-20 bg-gradient-to-br from-[#0e0677] via-[#1a0f9e] to-[#0e0677] relative overflow-hidden">
       {/* Background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-[#f3115d] rounded-full filter blur-[200px] opacity-20 animate-pulse" />
@@ -43,19 +43,19 @@ const HowToGet = () => {
       </div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <div className="inline-block mb-4 px-6 py-2 bg-[#f3115d]/20 backdrop-blur-sm border border-[#f3115d]/50 rounded-full">
-            <span className="text-[#f3115d] font-bold text-sm uppercase tracking-wider">Passo a passo</span>
+        <div className="text-center mb-10 md:mb-16">
+          <div className="inline-block mb-3 md:mb-4 px-4 sm:px-6 py-1.5 sm:py-2 bg-[#f3115d]/20 backdrop-blur-sm border border-[#f3115d]/50 rounded-full">
+            <span className="text-[#f3115d] font-bold text-xs sm:text-sm uppercase tracking-wider">Passo a passo</span>
           </div>
-          <h2 className="text-4xl md:text-6xl lg:text-7xl font-black text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-white mb-4 md:mb-6 px-4">
             Como Garantir Seu <span className="text-transparent bg-clip-text bg-gradient-to-r from-[#f3115d] to-[#ff1a6d]">Cupom</span>
           </h2>
-          <p className="text-xl md:text-2xl text-white/90 font-semibold max-w-3xl mx-auto">
+          <p className="text-base sm:text-lg md:text-xl text-white/90 font-semibold max-w-3xl mx-auto px-4">
             É simples, rápido e você garante 87% de desconto!
           </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8 mb-10 md:mb-16">
           {steps.map((step, index) => (
             <div
               key={index}
@@ -66,36 +66,38 @@ const HowToGet = () => {
               <div className="absolute -inset-1 bg-gradient-to-r from-[#f3115d] to-[#ff1a6d] rounded-3xl opacity-0 group-hover:opacity-100 blur-2xl transition-opacity duration-500" />
               
               {/* Card */}
-              <div className="relative bg-white rounded-3xl p-8 shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden">
+              <div className="relative bg-white rounded-2xl md:rounded-3xl p-6 sm:p-7 md:p-8 shadow-2xl transform hover:scale-105 transition-all duration-500 overflow-hidden">
                 {/* Número de fundo gigante */}
-                <div className="absolute top-0 right-0 text-[150px] font-black text-[#0e0677]/5 leading-none">
+                <div className="absolute top-0 right-0 text-[80px] sm:text-[120px] md:text-[150px] font-black text-[#0e0677]/5 leading-none">
                   {step.number}
                 </div>
                 
                 <div className="relative z-10">
                   {/* Badge do número */}
-                  <div className="inline-block mb-6 px-6 py-3 bg-gradient-to-r from-[#0e0677] to-[#1a0f9e] rounded-2xl shadow-xl">
-                    <span className="text-white font-black text-2xl">PASSO {step.number}</span>
+                  <div className="inline-block mb-4 sm:mb-5 md:mb-6 px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3 bg-gradient-to-r from-[#0e0677] to-[#1a0f9e] rounded-xl md:rounded-2xl shadow-xl">
+                    <span className="text-white font-black text-base sm:text-lg md:text-xl">PASSO {step.number}</span>
                   </div>
                   
                   {/* Ícone */}
-                  <div className="mb-6 inline-block group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
-                    {step.icon}
+                  <div className="mb-4 sm:mb-5 md:mb-6 inline-block group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                    <div className="w-12 h-12 sm:w-14 sm:h-14 md:w-16 md:h-16">
+                      {step.icon}
+                    </div>
                   </div>
                   
                   {/* Título */}
-                  <h3 className="text-2xl font-black text-[#0e0677] mb-4">
+                  <h3 className="text-xl sm:text-2xl font-black text-[#0e0677] mb-3 md:mb-4">
                     {step.title}
                   </h3>
                   
                   {/* Descrição */}
-                  <p className="text-gray-700 leading-relaxed">
+                  <p className="text-gray-700 leading-relaxed text-sm sm:text-base">
                     {step.description}
                   </p>
                 </div>
 
                 {/* Decoração de canto */}
-                <div className="absolute -bottom-10 -right-10 w-40 h-40 bg-gradient-to-br from-[#f3115d]/20 to-transparent rounded-full filter blur-2xl" />
+                <div className="absolute -bottom-10 -right-10 w-32 h-32 sm:w-40 sm:h-40 bg-gradient-to-br from-[#f3115d]/20 to-transparent rounded-full filter blur-2xl" />
               </div>
 
               {/* Seta conectando (apenas entre os passos) */}
@@ -113,17 +115,17 @@ const HowToGet = () => {
         </div>
 
         {/* CTA final da seção */}
-        <div className="text-center">
-          <div className="relative inline-block group">
+        <div className="text-center px-4">
+          <div className="relative inline-block group w-full sm:w-auto">
             <div className="absolute -inset-2 bg-gradient-to-r from-[#f3115d] via-[#ff1a6d] to-[#f3115d] rounded-2xl filter blur-2xl opacity-75 group-hover:opacity-100 animate-pulse" />
             
             <a
               href="https://wa.me/5511945877291?text=Olá!%20Quero%20garantir%20meu%20desconto%20de%2087%25%20OFF!"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative inline-flex items-center gap-4 bg-gradient-to-r from-[#f3115d] to-[#ff1a6d] text-white font-black text-xl md:text-3xl px-12 md:px-16 py-6 md:py-8 rounded-2xl shadow-2xl hover:scale-110 transition-all duration-300 border-2 border-white/20"
+              className="relative inline-flex items-center justify-center gap-2 sm:gap-3 md:gap-4 bg-gradient-to-r from-[#f3115d] to-[#ff1a6d] text-white font-black text-base sm:text-lg md:text-xl lg:text-2xl px-6 sm:px-10 md:px-14 py-4 sm:py-5 md:py-6 rounded-2xl shadow-2xl hover:scale-105 md:hover:scale-110 transition-all duration-300 border-2 border-white/20 w-full sm:w-auto"
             >
-              <svg className="w-8 h-8 group-hover:scale-110 transition-transform" fill="currentColor" viewBox="0 0 20 20">
+              <svg className="w-6 h-6 sm:w-7 sm:h-7 md:w-8 md:h-8 group-hover:scale-110 transition-transform flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
                 <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
               </svg>
               <span>GARANTIR MEU CUPOM AGORA</span>
